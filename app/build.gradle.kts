@@ -97,6 +97,10 @@ android {
     }
 }
 
+room {
+    schemaDirectory("$projectDir/schemas")
+}
+
 dependencies {
 
     implementation(platform("androidx.compose:compose-bom:2024.10.01"))
