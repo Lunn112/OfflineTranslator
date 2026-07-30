@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(ctranslate2_android)
+add_library(ctranslate2_android SHARED ctranslate2_jni.cpp)
+find_library(log-lib log)
+target_link_libraries(ctranslate2_android ${log-lib})
